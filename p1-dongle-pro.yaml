@@ -26,6 +26,13 @@ status_led:
     number: 7
     inverted: true
 
+mqtt:
+  broker: !secret mqtt_broker
+  port: !secret mqtt_port
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+  discovery: true
+
 wifi:
   power_save_mode: none
   networks:
