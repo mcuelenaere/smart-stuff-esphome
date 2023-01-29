@@ -18,7 +18,7 @@ esp32:
   board: esp32-c3-devkitm-1
   framework: 
     type: arduino
-    version: 2.0.3
+    version: 2.0.6
     platform_version: 4.4.0
     
 status_led:
