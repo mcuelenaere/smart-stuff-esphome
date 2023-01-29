@@ -26,29 +26,15 @@ status_led:
     number: 7
     inverted: true
 
-api:
-  services:
-    - service: p1_dongle_reboot
-      then:
-        - button.press:
-            id: reboot
-ota:
-
 wifi:
   power_save_mode: none
-# Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: ${device_name}
-    ap_timeout: 15s
+  networks:
+  - ssid: TelenetWiFree
+    eap:
+      identity: authentic.telenet.be
+      username: !secret wifi_username
+      password: !secret wifi_password
 
-dashboard_import:
-  package_import_url: github://mhendriks/esphome-p1/p1-dongle-pro.yaml@main
-  
-captive_portal:
-
-web_server:
-  port: 80
-  
 # Enable logging
 logger:
   level: INFO
