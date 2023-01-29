@@ -64,38 +64,20 @@ sensor:
   - platform: dsmr
 #    energy_delivered_lux:
 #      name: "Energy Consumed Luxembourg"
-#      state_class: total_increasing
     energy_delivered_tariff1:
       name: "Energy Consumed Tariff 1"
-      state_class: total_increasing
-      device_class: energy
     energy_delivered_tariff2:
       name: "Energy Consumed Tariff 2"
-      state_class: total_increasing
-      device_class: energy
 #    energy_returned_lux:
 #      name: "Energy Produced Luxembourg"
-#      state_class: total_increasing
     energy_returned_tariff1:
       name: "Energy Produced Tariff 1"
-      state_class: total_increasing
     energy_returned_tariff2:
       name: "Energy Produced Tariff 2"
-      state_class: total_increasing
     power_delivered:
       name: "Power Consumed"
-      unit_of_measurement: "W"
-      state_class: "measurement"
-      accuracy_decimals: 0
-      filters:
-        - multiply: 1000
     power_returned:
       name: "Power Produced"
-      unit_of_measurement: "W"
-      state_class: "measurement"
-      accuracy_decimals: 0
-      filters:
-        - multiply: 1000
     electricity_failures:
       name: "Electricity Failures"
       icon: mdi:alert
@@ -116,52 +98,20 @@ sensor:
       name: "Current Phase 3"
     power_delivered_l1:
       name: "Power Consumed Phase 1"
-      unit_of_measurement: "W"
-      state_class: "measurement"
-      accuracy_decimals: 0
-      filters:
-        - multiply: 1000
     power_delivered_l2:
       name: "Power Consumed Phase 2"
-      unit_of_measurement: "W"
-      state_class: "measurement"
-      accuracy_decimals: 0
-      filters:
-        - multiply: 1000
     power_delivered_l3:
       name: "Power Consumed Phase 3"
-      unit_of_measurement: "W"
-      state_class: "measurement"
-      accuracy_decimals: 0
-      filters:
-        - multiply: 1000
     power_returned_l1:
       name: "Power Produced Phase 1"
-      unit_of_measurement: "W"
-      state_class: "measurement"
-      accuracy_decimals: 0
-      filters:
-        - multiply: 1000
     power_returned_l2:
       name: "Power Produced Phase 2"
-      unit_of_measurement: "W"
-      state_class: "measurement"
-      accuracy_decimals: 0
-      filters:
-        - multiply: 1000
     power_returned_l3:
       name: "Power Produced Phase 3"
-      unit_of_measurement: "W"
-      state_class: "measurement"
-      accuracy_decimals: 0
-      filters:
-        - multiply: 1000
     gas_delivered:
       name: "Gas Consumed"
-      state_class: total_increasing
     gas_delivered_be:
       name: "Gas Consumed Belgium"
-      state_class: total_increasing
   - platform: uptime
     name: "Uptime"
   - platform: wifi_signal
