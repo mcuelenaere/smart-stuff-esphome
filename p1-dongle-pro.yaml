@@ -41,6 +41,9 @@ wifi:
       username: !secret wifi_username
       password: !secret wifi_password
 
+mdns:
+  disabled: false
+
 # Enable logging
 logger:
   level: INFO
