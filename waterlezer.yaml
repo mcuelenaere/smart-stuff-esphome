@@ -114,9 +114,6 @@ sensor:
     name: "WiFi Signal Sensor"
     update_interval: 60s
 
-  - platform: uptime
-    name: "Uptime"
-
 text_sensor:
   - platform: wifi_info
     ip_address:
