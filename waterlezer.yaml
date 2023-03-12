@@ -38,6 +38,12 @@ wifi:
   ap:
     ssid: ${device_name}
   power_save_mode: LIGHT
+  fast_connect: true
+  manual_ip:
+    static_ip: !secret wifi_ip
+    gateway: !secret wifi_gateway
+    subnet: !secret wifi_subnet
+    dns1: !secret wifi_dns
 
 web_server:
   port: 80
