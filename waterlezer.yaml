@@ -37,6 +37,7 @@ wifi:
       hidden: !secret wifi_hidden
   ap:
     ssid: ${device_name}
+  power_save_mode: LIGHT
 
 web_server:
   port: 80
