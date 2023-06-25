@@ -56,12 +56,12 @@ uart:
   
 dsmr:
 
-button:  
-  - platform: restart
-    name: "_Restart device"
-    id: reboot
-  - platform: factory_reset
-    name: "_Restart with Factory Default Settings"
+#button:  
+#  - platform: restart
+#    name: "_Restart device"
+#    id: reboot
+#  - platform: factory_reset
+#    name: "_Restart with Factory Default Settings"
       
 sensor:
   - platform: dsmr
